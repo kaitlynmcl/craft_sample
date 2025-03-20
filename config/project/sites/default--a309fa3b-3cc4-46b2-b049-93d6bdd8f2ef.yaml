@@ -1,0 +1,8 @@
+baseUrl: $PRIMARY_SITE_URL
+handle: default
+hasUrls: true
+language: en-US
+name: 'craft sample'
+primary: true
+siteGroup: 823c0cd6-eceb-4804-b6a6-f19cc87cb031 # craft sample
+sortOrder: 1
