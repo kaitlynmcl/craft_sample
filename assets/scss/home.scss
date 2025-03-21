@@ -1,0 +1,30 @@
+/* assets/scss/home.scss */
+
+.home {
+    max-width: 1200px;
+    margin: 0 auto;
+
+    &__categories {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        margin: 0 20px 0 0;
+    }
+
+    &__header {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #0c1d26;
+    }
+
+    &__images {
+        display: flex;
+        flex-wrap: wrap;
+
+        img {
+            max-width: 300px;
+            padding: 0 20px 0 0;
+        }
+    }
+}

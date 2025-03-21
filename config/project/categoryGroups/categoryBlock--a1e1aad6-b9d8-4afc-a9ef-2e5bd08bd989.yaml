@@ -1,0 +1,82 @@
+defaultPlacement: end
+fieldLayouts:
+  01988f5c-c281-41a8-88f3-ee7e6b8fc4dd:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            dateAdded: '2025-03-20T23:00:18+00:00'
+            disabled: false
+            elementCondition: null
+            id: null
+            includeInCards: false
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            providesThumbs: false
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\TitleField
+            uid: e901acfc-3c0c-4ea3-b713-b86a56660be3
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-20T23:01:41+00:00'
+            elementCondition: null
+            fieldUid: 38f33cf9-0f11-462c-a659-18410eebd4d2 # Content Block
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1c9e1003-9203-4b35-87f3-5f72a6d8022c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            dateAdded: '2025-03-20T23:01:41+00:00'
+            elementCondition: null
+            fieldUid: 30eb955e-d3a3-4e00-8459-d3bd058a535c # Image
+            handle: null
+            includeInCards: false
+            instructions: null
+            label: null
+            providesThumbs: false
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 7760387d-b8a1-4ed9-bb8a-21da20e35d5c
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 15fc1718-1600-46ff-86e4-84b0bbe5ed4e
+        userCondition: null
+handle: categoryBlock
+name: 'Category Block'
+siteSettings:
+  a309fa3b-3cc4-46b2-b049-93d6bdd8f2ef: # craft sample
+    hasUrls: true
+    template: category-block/_category.twig
+    uriFormat: 'category-block/{slug}'
+structure:
+  maxLevels: null
+  uid: 553d443d-0c60-411f-b000-34b3c451a828

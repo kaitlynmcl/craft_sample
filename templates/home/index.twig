@@ -1,0 +1,43 @@
+{% block content %}
+
+	{% block stylesheets %}
+		<link rel="stylesheet" href="{{ craft.app.request.baseUrl ~ '/build/home.css' }}">
+	{% endblock %}
+
+	{% set homeEntry = craft.entries.section('home').one() %}
+	{% if homeEntry %}
+		<div class="home">
+			{% if homeEntry.header and homeEntry.header | length %}
+				<h2 class="home__header">
+					{{ homeEntry.header }}
+				</h2>
+			{% endif %}
+
+			{% if homeEntry.contentBlock and homeEntry.contentBlock | length %}
+				<p class="home__content">
+					{{ homeEntry.contentBlock }}
+				</p>
+			{% endif %}
+
+			<div class="home__images">
+				{% set images = [homeEntry.image, homeEntry.image2, homeEntry.image3] %}
+
+				{% for image in images %}
+					{% if image | length %}
+						<img src="{{ image.one().url }}" alt="{{ image.title }}"/>
+					{% endif %}
+				{% endfor %}
+			</div>
+
+			{% if homeEntry.homepageCategories and homeEntry.homepageCategories | length %}
+				<div class="home__categories">
+					{% for category in homeEntry.homepageCategories %}
+						<div class="home__card">
+							{% include 'components/card' with {'category': category} %}
+						</div>
+					{% endfor %}
+				</div>
+			{% endif %}
+		</div>
+	{% endif %}
+{% endblock %}

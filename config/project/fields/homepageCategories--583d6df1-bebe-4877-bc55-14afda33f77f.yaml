@@ -1,0 +1,21 @@
+columnSuffix: null
+handle: homepageCategories
+instructions: null
+name: 'Homepage Categories'
+searchable: false
+settings:
+  allowSelfRelations: false
+  branchLimit: null
+  maintainHierarchy: false
+  maxRelations: null
+  minRelations: null
+  selectionLabel: null
+  showCardsInGrid: true
+  showSiteMenu: false
+  source: 'group:a1e1aad6-b9d8-4afc-a9ef-2e5bd08bd989' # Category Block
+  targetSiteId: null
+  validateRelatedElements: false
+  viewMode: cards
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Categories

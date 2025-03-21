@@ -1,0 +1,20 @@
+{% block stylesheets %}
+	<link rel="stylesheet" href="{{ craft.app.request.baseUrl ~ '/build/card.css' }}">
+{% endblock %}
+
+{% if category and category | length %}
+	<div class="card">
+		{% if category.title and category.title | length %}
+			<h3 class="card__title">{{ category.title }}</h3>
+		{% endif %}
+
+		{% if category.contentBlock and category.contentBlock | length %}
+			<p class="card__content">{{ category.contentBlock }}
+			</p>
+		{% endif %}
+
+		{% if category.image and category.image | length %}
+			<img src="{{ category.image.one().url}}" alt="{{ category.image.title }}"/>
+		{% endif %}
+	</div>
+{% endif %}

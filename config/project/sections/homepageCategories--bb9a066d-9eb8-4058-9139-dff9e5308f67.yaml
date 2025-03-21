@@ -1,0 +1,28 @@
+defaultPlacement: end
+enableVersioning: true
+entryTypes:
+  -
+    uid: 44bd5a8c-a5f7-46ef-ae47-ffb9e66bed06 # Images Section
+handle: homepageCategories
+maxAuthors: 1
+name: 'Homepage Categories'
+previewTargets:
+  -
+    __assoc__:
+      -
+        - label
+        - 'Primary entry page'
+      -
+        - urlFormat
+        - '{url}'
+      -
+        - refresh
+        - '1'
+propagationMethod: all
+siteSettings:
+  a309fa3b-3cc4-46b2-b049-93d6bdd8f2ef: # craft sample
+    enabledByDefault: true
+    hasUrls: true
+    template: homepage-categories/_entry.twig
+    uriFormat: 'homepage-categories/{slug}'
+type: channel
